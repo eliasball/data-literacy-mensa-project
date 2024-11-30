@@ -53,7 +53,7 @@ $(document).ready(function () {
         if (name === "" || collectors[name] !== undefined) {
             return
         }
-        add_collector(name)
+        add_collector(name.replace(/\s/g, "_"))
         $("#create-collector-name").val("")
     })
 
